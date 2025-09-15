@@ -11,21 +11,21 @@
 
 ## Introduction
 
-**| Warning | Under  construction...**
+In this document, together with my team, we will present the development of the first deliverable for the Final Project of the Database Management Systems course, in which we have been asked to model and describe the ER diagram and its components for a personal book management system.
 
 ## Descriptions
 
-**| Warning | Under  construction...**
+UrBooksInALook is a platform that allows users to manage and share books, either privately or publicly through a catalog. The system facilitates personal library management, creation of reading clubs, book exchanges, and sales.
+
+## Entities
 
 ## Diagrams
 
-**| Warning | Under  construction...**
+### ER | Preview
 
-### ER
+### Logic | Preview
 
-### Logic
-
-### Fisic
+### Fisic | Preview
 
 
 ## Authors
