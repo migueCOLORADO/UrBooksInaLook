@@ -21,6 +21,9 @@ UrBooksInALook is a platform that allows users to manage and share books, either
 
 ### ER | Preview
 
+![ER - Diagram](https://github.com/migueCOLORADO/UrBooksInaLook/blob/main/assets/eR.png)
+
+
 ### Logic | Preview
 
 ### Fisic | Preview
