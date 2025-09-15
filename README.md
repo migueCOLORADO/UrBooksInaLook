@@ -17,8 +17,6 @@ In this document, together with my team, we will present the development of the 
 
 UrBooksInALook is a platform that allows users to manage and share books, either privately or publicly through a catalog. The system facilitates personal library management, creation of reading clubs, book exchanges, and sales.
 
-## Entities
-
 ## Diagrams
 
 ### ER | Preview
