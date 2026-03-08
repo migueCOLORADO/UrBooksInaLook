@@ -1,46 +1,74 @@
-# Final Proyect | Personal Library Management
+# Proyecto Final | Personal Library Management
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Descriptions](#descriptions)
-3. [Diagrams](#diagrams)
-4. [Authors](#authors)
-5. [Course - Info](#course---information)
+## Tabla de Contenidos
+1. [Introducción](#introducción)
+2. [Presentación del Problema](#presentación-del-problema)
+3. [Diagramas & Diccionarios](#diagramas--diccionarios-de-datos)
+    1. [Modelo Conceptual](#modelo-conceptual--er)
+        - [Diagrama](#diagrama--preview)
+        - [Diccionario de Datos](#diccionario-de-datos--preview)
+    2. [Modelo Relacional](#modelo-relacional)
+        - [Sin Normalizar](#sin-normalizar)
+            + [Diagrama](#diagrama--preview-1)
+            + [Diccionario de Datos](#diccionario-de-datos--preview-1)
+        - [Normalizado](#normalizado)
+            + [Diagrama](#diagrama--preview-2)
+            + [Diccionario de Datos](#diccionario-de-datos--preview-2)
+4. [Autores](#autores)
+5. [Información del Curso](#información-del-curso)
 
 <div style = "text-align: justify;">
 
-## Introduction
+## Introducción
 
-In this document, together with my team, we will present the development of the first deliverable for the Final Project of the Database Management Systems course, in which we have been asked to model and describe the ER diagram and its components for a personal book management system.
-
-## Descriptions
-
-UrBooksInALook is a platform that allows users to manage and share books, either privately or publicly through a catalog. The system facilitates personal library management, creation of reading clubs, book exchanges, and sales.
-
-## Diagrams
-
-### ER | Preview
-
-![ER - Diagram](https://github.com/migueCOLORADO/UrBooksInaLook/blob/main/assets/eR.png)
+En este documento, junto con mi equipo, presentaremos el desarrollo del primer entregable para el Proyecto Final del curso de Sistemas de Gestión de Bases de Datos, en el que se nos ha pedido modelar y describir el diagrama ER y sus componentes para un sistema de gestión de libros personales.
 
 
-### Logic | Preview
+## Presentación del Problema
 
-### Fisic | Preview
+UrBooksInALook es una plataforma que permite a los usuarios gestionar y compartir libros, ya sea de forma privada o pública a través de un catálogo. El sistema facilita la gestión personal de bibliotecas, la creación de clubes de lectura, intercambios de libros y ventas.
 
 
-## Authors
+## Diagramas & Diccionarios de Datos
+
+### Modelo Conceptual | ER
+
+#### Diagrama | Preview
+![Diagrama | ER]()
+
+#### Diccionario de Datos | Preview
+![Diccionario | ER]()
+
+
+### Modelo Relacional
+
+#### Sin Normalizar
+
+##### Diagrama | Preview
+![Diagrama | Modelo Relacional | Sin Normalizar]()
+
+##### Diccionario de Datos | Preview
+![Diccionario | Modelo Relacional | Sin Normalizar]()
+
+#### Normalizado
+
+##### Diagrama | Preview
+![Diagrama | Modelo Relacional | Normalizado]()
+
+##### Diccionario de Datos | Preview
+![Diccionario | Modelo Relacional | Normalizado]()
+
+
+## Autores
 
 **Miguel Ángel Colorado Castaño**  
-**David Guerra Morales** <br>
-**Juan José García Urrego**
+**Alejandro Soto Bermeo** <br>
 
-
-## Course - Information
-**Course |** Sistemas de Gestión de Datos - S2566-0534
-**Assignment |** Final Proyect | Deliverable - 01 
-**University |** EAFIT University
-**Year |** 2025-2
+## Información del Curso
+**Curso |** Sistemas de Gestión de Datos - C2661-SI2003-4826 <br>
+**Asignación |** Proyecto Final | Entregable- 01 <br>
+**Universidad |** Universidad EAFIT <br>
+**Año |** 2026-1
 
 </div>
 
