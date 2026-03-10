@@ -3,17 +3,11 @@
 ## Tabla de Contenidos
 1. [Introducción](#introducción)
 2. [Presentación del Problema](#presentación-del-problema)
-3. [Diagramas & Diccionarios](#diagramas--diccionarios-de-datos)
+3. [Diagramas](#diagramas)
     1. [Modelo Conceptual](#modelo-conceptual--er)
-        - [Diagrama](#diagrama--preview)
-        - [Diccionario de Datos](#diccionario-de-datos--preview)
     2. [Modelo Relacional](#modelo-relacional)
-        - [Sin Normalizar](#sin-normalizar)
-            + [Diagrama](#diagrama--preview-1)
-            + [Diccionario de Datos](#diccionario-de-datos--preview-1)
-        - [Normalizado](#normalizado)
-            + [Diagrama](#diagrama--preview-2)
-            + [Diccionario de Datos](#diccionario-de-datos--preview-2)
+        - [Sin Normalizar](#sin-normalizar--preview)
+        - [Normalizado](#normalizado--preview)
 4. [Autores](#autores)
 5. [Información del Curso](#información-del-curso)
 
@@ -54,34 +48,18 @@ Finalmente, el sistema deberá soportar interacciones entre usuarios mediante pr
 
 Asimismo, el sistema permitirá gestionar solicitudes de intercambio de libros entre usuarios, registrando un identificador único de intercambio, la fecha en la que se realiza la solicitud y el estado del intercambio (pendiente, aceptado o rechazado), permitiendo que los usuarios negocien directamente el intercambio de sus libros.
 
-## Diagramas & Diccionarios de Datos
+## Diagramas
 
 ### Modelo Conceptual | ER
-
-#### Diagrama | Preview
-![Diagrama | ER]()
-
-#### Diccionario de Datos | Preview
-![Diccionario | ER]()
-
+![Diagrama | ER](/Entregas/01/Diagramas/eR.png)
 
 ### Modelo Relacional
 
-#### Sin Normalizar
+#### Sin Normalizar | Preview
+![Diagrama | Modelo Relacional | Sin Normalizar](/Entregas/01/Diagramas/modeloRelacional.png)
 
-##### Diagrama | Preview
-![Diagrama | Modelo Relacional | Sin Normalizar]()
-
-##### Diccionario de Datos | Preview
-![Diccionario | Modelo Relacional | Sin Normalizar]()
-
-#### Normalizado
-
-##### Diagrama | Preview
-![Diagrama | Modelo Relacional | Normalizado]()
-
-##### Diccionario de Datos | Preview
-![Diccionario | Modelo Relacional | Normalizado]()
+#### Normalizado | Preview
+**| WARNING | En construccion...**
 
 
 ## Autores
