@@ -1,17 +1,10 @@
--- ============================================================
--- UrBookInALook | Modelo Relacional Normalizado (3NF)
--- Generado desde el MER | Listo para importar en Redgate
--- ============================================================
-
-CREATE DATABASE IF NOT EXISTS UrBookInALook
+CREATE DATABASE UrBookInALook
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
 USE UrBookInALook;
 
--- ============================================================
--- TABLAS INDEPENDIENTES
--- ============================================================
+-- Crear Tablas | Aqui pasamos las Relaciones del Modelo Relacional como Tablas con las restricciones para preservar la integridad de los datso
 
 CREATE TABLE Usuario (
     idUsuario        INT          NOT NULL AUTO_INCREMENT,
@@ -67,10 +60,6 @@ CREATE TABLE ClubLectura (
     CONSTRAINT pk_club PRIMARY KEY (idClub),
     CONSTRAINT chk_club_estado CHECK (estado IN ('activo','inactivo'))
 );
-
--- ============================================================
--- TABLAS DEPENDIENTES
--- ============================================================
 
 CREATE TABLE Ejemplar (
     idEjemplar            INT         NOT NULL AUTO_INCREMENT,
@@ -131,18 +120,14 @@ CREATE TABLE Intercambio (
     idEjemplarSolicita INT         NOT NULL,
     idEjemplarRecibe   INT         NOT NULL,
     CONSTRAINT pk_intercambio               PRIMARY KEY (idIntercambio),
-    CONSTRAINT fk_intercambio_usuario_s     FOREIGN KEY (idUsuarioSolicita)  REFERENCES Usuario(idUsuario)   ON UPDATE CASCADE ON DELETE RESTRICT,
-    CONSTRAINT fk_intercambio_usuario_r     FOREIGN KEY (idUsuarioRecibe)    REFERENCES Usuario(idUsuario)   ON UPDATE CASCADE ON DELETE RESTRICT,
-    CONSTRAINT fk_intercambio_ejemplar_s    FOREIGN KEY (idEjemplarSolicita) REFERENCES Ejemplar(idEjemplar) ON UPDATE CASCADE ON DELETE RESTRICT,
-    CONSTRAINT fk_intercambio_ejemplar_r    FOREIGN KEY (idEjemplarRecibe)   REFERENCES Ejemplar(idEjemplar) ON UPDATE CASCADE ON DELETE RESTRICT,
+    CONSTRAINT fk_intercambio_usuario_s     FOREIGN KEY (idUsuarioSolicita)  REFERENCES Usuario(idUsuario)   ON DELETE RESTRICT,
+    CONSTRAINT fk_intercambio_usuario_r     FOREIGN KEY (idUsuarioRecibe)    REFERENCES Usuario(idUsuario)   ON DELETE RESTRICT,
+    CONSTRAINT fk_intercambio_ejemplar_s    FOREIGN KEY (idEjemplarSolicita) REFERENCES Ejemplar(idEjemplar) ON DELETE RESTRICT,
+    CONSTRAINT fk_intercambio_ejemplar_r    FOREIGN KEY (idEjemplarRecibe)   REFERENCES Ejemplar(idEjemplar) ON DELETE RESTRICT,
     CONSTRAINT chk_intercambio_estado       CHECK (estado IN ('pendiente','aceptado','rechazado')),
     CONSTRAINT chk_intercambio_usuarios     CHECK (idUsuarioSolicita <> idUsuarioRecibe),
     CONSTRAINT chk_intercambio_ejemplares   CHECK (idEjemplarSolicita <> idEjemplarRecibe)
 );
-
--- ============================================================
--- TABLAS ASOCIATIVAS — Rompen relaciones N:M
--- ============================================================
 
 CREATE TABLE Escribir (
     ISBN    VARCHAR(20) NOT NULL,
